@@ -18,13 +18,12 @@
     }
     header {
       background-color: #222;
-      padding: 16px;
-      overflow: hidden; /* float 해제 */
+      padding: 0 16px;
+      overflow: hidden;
     }
     .logo-menu {
       float: left;
       margin-top: 20px;
-      width: 100%; /* 모바일 대응 */
     }
     .logo-menu img {
       height: 60px;
@@ -45,8 +44,6 @@
     .sidebar {
       float: right;
       margin-top: 12px;
-      width: 100%; /* 모바일 대응 */
-      text-align: center;
     }
     .sidebar a {
       display: inline-block;
@@ -111,26 +108,37 @@
       margin-right: 24px;
       font-size: 14px;
     }
+
+    /* 반응형 처리 */
     @media (max-width: 768px) {
       header {
         text-align: center;
         padding: 16px;
       }
-      .logo-menu,
-      .sidebar {
+
+      .logo-menu {
         float: none;
         display: block;
-        margin: 16px auto;
-        width: 100%;
+        margin: 0 auto 16px;
         text-align: center;
       }
+
       .logo-menu nav {
+        margin-top: 12px;
         display: block;
-        margin-top: 16px;
       }
+
       .logo-menu nav a {
         display: block;
         margin: 8px 0;
+        text-align: center;
+      }
+
+      .sidebar {
+        float: none;
+        display: block;
+        clear: both;
+        margin: 16px auto 0;
         text-align: center;
       }
     }
