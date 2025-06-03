@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+    }
+    header {
+      background-color: #222;
+      padding: 16px;
+      height:100px;
+    }
+    .logo-menu {
+      float: left;
+    }
+    .logo-menu img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    .logo-menu nav {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 16px;
+    }
+    .logo-menu nav a {
+      color: orange;
+      text-decoration: none;
+      margin-left: 64px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .sidebar {
+      float: right;
+    }
+    .sidebar a {
+      color: orange;
+      margin-left: 16px;
+    }
+    .clear { clear: both; }
+    main {
+      padding: 32px 16px;
+      clear: both;
+    }
+    .box {
+      background-color: #222;
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 32px;
+    }
+    section {
+      margin-bottom: 48px;
+    }
+    section img {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      color: orange;
+      margin-bottom: 16px;
+      font-size: 42px;
+    }
+    h2 {
+      color: white;
+      margin-bottom: 16px;
+      margin-left: 32px;
+      font-size: 24px;
+    }
+    table {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #333;
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #444;
+    }
+    footer {
+      clear: both;
+      background-color: #111;
+      padding: 32px 16px;
+      font-size: 14px;
+    }
+    footer p {
+      margin-bottom: 8px;
+    }
+    .footer-links {
+      margin-top: 16px;
+    }
+    .footer-links a {
+      color: #aaa;
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+      .logo-menu, .sidebar {
+        float: none;
+        display: block;
+        margin-bottom: 16px;
+      }
+      .logo-menu nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-menu">
+      <a href="index.html"><img src="img/hanhwa_logo.jpg" alt="한화이글스 로고"></a>
+      <nav>
+        <a href="nest.html">Eagles’ Nest</a>
+        <a href="spotlight.html">Player Spotlight</a>
+        <a href="chant.html">Chant Hall</a>
+        <a href="photo.html">Photo Field</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+    <div class="sidebar">
+      <a href="https://www.instagram.com/hanwhaeagles_soori/" target="_blank"><img src="img/hanhwa_insta.png" width="100px"></a>
+      <a href="https://www.youtube.com/channel/UCdq4Ji3772xudYRUatdzRrg" target="_blank"><img src="img/hanhwa_youtube.png" width="100px"></a>
+    </div>
+    <div class="clear"></div>
+  </header>
+
+  <main>
+    <section>
+      <h1>2025 승패표</h1>
+      <div class="box">
+        <img src="img/win_lose.png">
+      </div>
+    </section>
+
+    <section>
+      <h1>투타 지표</h1>
+      <h2>투수 지표</h2>
+      <div class="box">
+        <img src="img/pitcher.png">
+      </div>
+      <h2>타자 지표</h2>
+      <div class="box">
+        <img src="img/batter.png">
+      </div>
+    </section>
+
+    <section>
+      <h1>2025 전망</h1>
+      <h2>현재 승승장구 요인</h2>
+      <div class="box">
+        <table>
+          <ul>선발 마운드와 불펜진의 안정화</ul>
+          <li>폰세, 와이스 등 외인 투수들의 1,2선발에서의 활약</li>
+          <li>3,4,5선발도 류현진, 문동주 등 MLB,국대급 투수들</li>
+          <li>마무리 김서현과 박상원, 한승혁 등 불펜 투수들의 성장</li><br>
+          <ul>공격의 다양성 추구</ul>
+          <li>김경문 감독의 "뛰는 야구"</li>
+          <li>2군 선수들의 활약에 따른 넓은 선수풀 확보</li>
+        </table>
+      </div>
+      <h2>극복해야 할 점</h2>
+      <div class="box">
+        <table>
+          <ul>1번타자의 부재</ul>
+          <li>1번타자가 명확히 정해져 있는 타팀과 달리 출루의 역할을 명확히 수행 할 타자가 없는 현실</li>
+          <ul>팀타율의 부진</ul>
+          <li>투수들의 활약에 비해 부진한 타자들의 타율</li>
+          <li>타선의 마지막 퍼즐로 남아있는 슬럼프를 겪고 있는 노시환, 안치홍 등의 주전선수 들</li>
+        </table>
+      </div>
+      <h2>종합 전망</h2>
+      <div class="box">
+        <table>
+          <ul>투수 - 전망 : 좋음</ul>
+          <li>엄상백이 부활한다면 앞으로 경기들도 걱정이 필요 없는 투수진들</li>
+          <ul>타자 - 전망 : 관망 필요</ul>
+          <li>노시환과 안치홍의 부활 필요</li>
+          <li>아무리 투수진이 좋아도 타선이 받쳐줘야 진정한 강팀으로 거듭날 수 있음</li>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Hanhwa Eagles</strong></p>
+    <p>주소: 대전광역시 중구 대종로 373</p>
+    <p>팬 페이지 주인: 윤상진 / 메인 슬로건: 이글스여 영원하라</p>
+    <p>전화: 042-000-0000 / FAX: 042-000-0001</p>
+    <div class="footer-links">
+      <a href="#">법적고지</a>
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">이용약관</a>
+      <a href="#">고객문의</a>
+      <a href="#">사이트맵</a>
+      <a href="#">광고문의</a>
+    </div>
+  </footer>
+</body>
+</html>

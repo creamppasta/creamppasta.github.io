@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chant Hall</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+    }
+    header {
+      background-color: #222;
+      height: 100px;
+      padding:16px;
+    }
+    .logo-menu {
+      float: left;
+    }
+    .logo-menu img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    .logo-menu nav {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 16px;
+    }
+    .logo-menu nav a {
+      color: orange;
+      text-decoration: none;
+      margin-left: 64px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .sidebar {
+      float: right;
+    }
+    .sidebar a {
+      color: orange;
+      margin-bottom: 1px;
+    }
+    main {
+      clear: both;
+      padding: 32px;
+    }
+    h1 {
+      font-size: 32px;
+      color: orange;
+      margin: 24px 0 8px 0;
+    }
+    h2 {
+      font-size: 24px;
+      color:white;
+    }
+    h3 {
+      font-size: 16px;
+      color:lightgrey;
+    }
+    .chant-item {
+      margin-bottom: 40px;
+    }
+    .chant-item img {
+      width: 240px;
+      height: 72px;
+      border: 4px solid orange;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+    .chant-player-item {
+      margin-bottom: 40px;
+    }
+    .chant-player-item img {
+      width: 160px;
+      height: 240px;
+      border: 4px solid orange;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+    footer {
+      clear: both;
+      background-color: #111;
+      padding: 32px 16px;
+      font-size: 14px;
+    }
+    footer p {
+      margin-bottom: 8px;
+    }
+    .footer-links {
+      margin-top: 16px;
+    }
+    .footer-links a {
+      color: #aaa;
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+        height: auto;
+        line-height: normal;
+        padding: 16px 0;
+      }
+      .logo-menu, .sidebar {
+        float: none;
+        display: block;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .logo-menu nav a {
+        display: block;
+        margin: 8px 0;
+      }
+      main {
+        clear: both;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-menu">
+      <a href="index.html"><img src="img/hanhwa_logo.jpg" alt="한화이글스 로고"></a>
+      <nav>
+        <a href="nest.html">Eagles’ Nest</a>
+        <a href="spotlight.html">Player Spotlight</a>
+        <a href="chant.html">Chant Hall</a>
+        <a href="photo.html">Photo Field</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+    <div class="sidebar">
+      <a href="https://www.instagram.com/hanwhaeagles_soori/" target="_blank"><img src="img/hanhwa_insta.png" width="100px"></a>
+      <a href="https://www.youtube.com/channel/UCdq4Ji3772xudYRUatdzRrg" target="_blank"><img src="img/hanhwa_youtube.png" width="100px"></a>
+    </div>
+    <div class="clear"></div>
+  </header>
+
+  <main>
+    <h3>사진을 클릭하시면 응원가 동영상과 가사를 보실 수 있습니다</h3>
+    <div class="chant-item">
+      <h1>팀 응원가</h1>
+      <h2>라인업송</h2>
+      <a href="lineupsong.html">
+        <img src="img/lineupson.png" alt="라인업송 썸네일">
+      </a>
+      <h2>나는 행복합니다</h2>
+      <a href="imhappy.html">
+        <img src="img/imhappy.png" alt="나는 행복합니다 썸네일">
+      </a>
+    </div>
+    <div class="chant-player-item">
+      <h1>선수 응원가</h1>
+      <h2>플로리얼</h2>
+      <a href="florial_song.html">
+        <img src="img/florial.png" alt="플로리얼 응원가 썸네일">
+      </a>
+      <h2>채은성</h2>
+      <a href="chae_song.html">
+        <img src="img/chae.png" alt="채은성 응원가 썸네일">
+      </a>
+      <h2>이진영</h2>
+      <a href="lee_song.html">
+        <img src="img/lee.png" alt="채은성 응원가 썸네일">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Hanhwa Eagles</strong></p>
+    <p>주소: 대전광역시 중구 대종로 373</p>
+    <p>팬 페이지 주인: 윤상진 / 메인 슬로건: 이글스여 영원하라</p>
+    <p>전화: 042-000-0000 / FAX: 042-000-0001</p>
+    <div class="footer-links">
+      <a href="#">법적고지</a>
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">이용약관</a>
+      <a href="#">고객문의</a>
+      <a href="#">사이트맵</a>
+      <a href="#">광고문의</a>
+    </div>
+  </footer>
+</body>
+</html>

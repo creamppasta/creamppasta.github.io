@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Spotlight</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #222;
+      height: 100px;
+      line-height: 100px;
+      padding: 0 16px;
+    }
+    .logo-menu {
+      float: left;
+    }
+    .logo-menu img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    .logo-menu nav {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 16px;
+    }
+    .logo-menu nav a {
+      color: orange;
+      text-decoration: none;
+      margin-left: 64px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .sidebar {
+      float: right;
+      margin-top: 14px;
+    }
+    .sidebar a {
+      color: orange;
+      margin-bottom: 1px;
+    }
+    main {
+      padding: 32px 16px;
+      clear: both;
+    }
+    h2 {
+      color: orange;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .cards {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .card {
+      float: left;
+      width: 30%;
+      height: 380px;
+      background-color: #333;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 1.66%;
+      text-align: center;
+    }
+    .card img {
+      width: 75%;
+      height: 180px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      margin: 8px 0;
+      color: #ffa500;
+    }
+    .clear {
+      clear: both;
+    }
+    footer {
+      clear: both;
+      background-color: #111;
+      padding: 32px 16px;
+      font-size: 14px;
+    }
+    footer p {
+      margin-bottom: 8px;
+    }
+    .footer-links {
+      margin-top: 16px;
+    }
+    .footer-links a {
+      color: #aaa;
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+      .logo-menu, .sidebar {
+        float: none;
+        display: block;
+        margin-bottom: 16px;
+      }
+      .logo-menu nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-menu">
+      <a href="index.html"><img src="img/hanhwa_logo.jpg" alt="한화이글스 로고"></a>
+      <nav>
+        <a href="nest.html">Eagles’ Nest</a>
+        <a href="spotlight.html">Player Spotlight</a>
+        <a href="chant.html">Chant Hall</a>
+        <a href="photo.html">Photo Field</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+    <div class="sidebar">
+      <a href="https://www.instagram.com/hanwhaeagles_soori/" target="_blank"><img src="img/hanhwa_insta.png" width="100px"></a>
+      <a href="https://www.youtube.com/channel/UCdq4Ji3772xudYRUatdzRrg" target="_blank"><img src="img/hanhwa_youtube.png" width="100px"></a>
+    </div>
+    <div class="clear"></div>
+  </header>
+
+  <main>
+    <h2>Player Photo Card</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="img/ponce.png" alt="폰세">
+        <h3>폰세</h3>
+        <p>ERA: 3.20<br>승: 12 / 탈삼진: 145</p>
+        <p>🇵🇷 푸에르토리코 출신의 강속구 투수</p>
+      </div>
+      <div class="card">
+        <img src="img/ryu.png" alt="류현진">
+        <h3>류현진</h3>
+        <p>ERA: 2.98<br>승: 145 / 탈삼진: 1800+</p>
+        <p>MLB 출신 에이스, 별명은 "코리안 몬스터"</p>
+      </div>
+      <div class="card">
+        <img src="img/florial.png" alt="플로리얼">
+        <h3>플로리얼</h3>
+        <p>타율: .295<br>홈런: 18 / 타점: 67</p>
+        <p>2019 NY양키스 유망주 랭킹 1위</p>
+      </div>
+      <div class="clear"></div>
+      <div class="card">
+        <img src="img/moon.png" alt="문현빈">
+        <h3>문현빈</h3>
+        <p>타율: .270<br>도루: 25 / OPS: .760</p>
+        <p>한화의 주먹밥 쿵야 MOON현빈</p>
+      </div>
+      <div class="card">
+        <img src="img/noh.png" alt="노시환">
+        <h3>노시환</h3>
+        <p>타율: .310<br>홈런: 22 / 타점: 88</p>
+        <p>누웠다 하면 홈런, 국대 4번타자</p>
+      </div>
+      <div class="card">
+        <img src="img/choi.png" alt="최재훈">
+        <h3>최재훈</h3>
+        <p>타율: .255<br>도루저지율: 40%</p>
+        <p>나의 최애 든든한 주전 포수</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Hanhwa Eagles</strong></p>
+    <p>주소: 대전광역시 중구 대종로 373</p>
+    <p>팬 페이지 주인: 윤상진 / 메인 슬로건: 이글스여 영원하라</p>
+    <p>전화: 042-000-0000 / FAX: 042-000-0001</p>
+    <div class="footer-links">
+      <a href="#">법적고지</a>
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">이용약관</a>
+      <a href="#">고객문의</a>
+      <a href="#">사이트맵</a>
+      <a href="#">광고문의</a>
+    </div>
+  </footer>
+</body>
+</html>
