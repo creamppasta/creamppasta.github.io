@@ -19,7 +19,7 @@
     header {
       background-color: #222;
       padding: 0 16px;
-      overflow: hidden; /* float 처리된 자식요소 감싸기 */
+      overflow: hidden;
     }
     .logo-menu {
       float: left;
@@ -27,6 +27,7 @@
     .logo-menu img {
       height: 60px;
       vertical-align: middle;
+      margin-top:17px;
     }
     .logo-menu nav {
       display: inline-block;
@@ -103,8 +104,6 @@
       margin-right: 24px;
       font-size: 14px;
     }
-
-    /* ✅ 반응형 처리 */
     @media (max-width: 768px) {
       header {
         text-align: center;
